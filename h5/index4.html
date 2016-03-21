@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>发现</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/iconfont.css">
+</head>
+<body>
+	<div class="container">
+		<header class="header_search">发现</header>
+		<div class="search_par">
+			<form class="form_search" action="">
+				<input type="text" placeholder="请输入昵称">
+				<input type="button" value="搜素">
+			</form>
+		</div>
+		<div id="wrap">
+			<div class="main">
+				<div class="pic"></div>
+				<div class="maincont">
+					<p>我叫小萌</p>
+					<p>我是小萌我怕谁！哈哈哈哈！</p>
+				</div>
+			</div>
+		</div>
+		<footer class="footer_search">
+			<div class="foot">
+				<nav class="footer_nav">
+					<ul>
+						<li>
+							<a>
+								<span></span>
+								<span>首页</span>
+							</a>
+						</li>
+						<li>
+							<a>
+								<span class="find_bg"></span>
+								<span class="hover">发现</span>
+							</a>
+						</li>
+						<li>
+							<a href=""></a>
+						</li>
+						<li>
+							<a>
+								<span></span>
+								<span>我的</span>
+							</a>
+						</li>
+						<li>
+							<a>
+								<span></span>
+								<span>退出</span>
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</footer>
+	</div>
+</body>
+<script src="js/iscroll.js"></script>
+<script src="js/zepto.min.js"></script>
+<script>
+	window.onload = function() {
+	    $("#wrap").height( $(window).height() - $(".header_search").height() - $(".search_par").height() - $(".footer_search").height() );
+		var $mywripper = new iScroll("wrap",{
+			hScrollbar:false, 
+			vScrollbar:false
+		});	
+	}
+	
+</script>
+</html>			

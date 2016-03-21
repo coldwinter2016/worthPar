@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+	<title>热点-关注</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="container">
+		<header class="hot_hearder">
+			<div class="hot_attention">
+				<a href="index8.html" class="hot">热点</a>
+				<a href="index5.html" class="attention">关注</a>
+			</div>
+		</header>
+		<div class="wrapper" id="wrapper">
+			<div>
+				<div class="main">
+					<div class="pic"></div>
+					<div class="maincont">
+						<p>我叫小萌<span class="number" id="zan">382344</span></p>
+						<p>我是小萌我怕谁！哈哈哈哈！</p>
+					</div>
+				</div>
+				<div class="cat_banner"></div>
+				<div class="user_name">小丸子啊小丸子！</div>
+				<div class="main main_borderb0">
+					<div class="pic"></div>
+					<div class="maincont">
+						<p>Lily<span class="number">382344</span></p>
+						<p>Hello!My name is Lily!</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="footer_search footer_hot">
+			<div class="foot">
+				<nav class="footer_nav">
+						<ul>
+							<li class="home">
+								<a>
+									<span class="myhome"></span>
+									<span class="hover">首页</span>
+								</a>
+							</li>
+							<li>
+								<a>
+									<span></span>
+									<span>发现</span>
+								</a>
+							</li>
+							<li>
+								<a href=""></a>
+							</li>
+							<li>
+								<a>
+									<span></span>
+									<span>我的</span>
+								</a>
+							</li>
+							<li>
+								<a>
+									<span></span>
+									<span>退出</span>
+								</a>
+							</li>
+						</ul>
+				</nav>
+			</div>
+		</footer>
+	</div>
+</body>
+<script src="js/iscroll.js"></script>
+<script src="js/zepto.min.js"></script>
+<script>
+	window.onload = function() {
+	    $("#wrapper").height( $(window).height() - $(".hot_hearder").height() - $(".footer_search").height() );
+	    console.log($("#wrapper").height());
+		var $mywripper = new iScroll("wrapper",{
+			hScrollbar:false, 
+			vScrollbar:false
+		});	
+	}
+	
+</script>
+</html>
